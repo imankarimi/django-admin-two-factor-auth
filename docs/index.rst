@@ -1,12 +1,9 @@
 Django Admin Two-Factor Auth Documentation
 ==============================================
 
-Google Two-Factor Authentication for Django admin. Built on top of the one-time
-password framework Django-admin-two-factor-auth_ and Django's built-in authentication framework
-``django.contrib.auth`` for providing the easiest integration into most Django
-projects. Inspired by the user experience of Google's Two-Step Authentication,
-allowing users to authenticate through call, text messages (SMS) or by using a
-token generator app like Google Authenticator.
+Google Two-Factor Authentication for Django admin. Built for providing the easiest integration
+into most Django projects. Inspired by the user experience of Google's Two-Step Authentication,
+allowing users to authenticate by using a token generator app like Google-Authenticator_.
 
 Contents:
 
@@ -20,7 +17,7 @@ Contents:
 
 I would love to hear your feedback on this application. If you run into
 problems, please file an issue on GitHub_, or contribute to the project by
-forking the repository and sending some pull requests or send me an email.
+forking the repository and sending some pull requests or email_.
 
 Indices and tables
 ==================
@@ -29,5 +26,6 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-.. _Django-admin-two-factor-auth: https://pypi.org/project/django-admin-two-factor/
+.. _Google-Authenticator: https://support.google.com/accounts/answer/1066447?hl=en
 .. _GitHub: https://github.com/imankarimi/django-admin-two-factor-auth/issues
+.. _email: Iman Karimi <imankarimi.mail@gmail.com>
