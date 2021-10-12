@@ -1,4 +1,4 @@
-Run And Demo
+Run & Demo
 ##############
 
 Run

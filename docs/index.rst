@@ -19,11 +19,11 @@ Contents:
 =========
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    requirements
    installation
-   run and demo
+   run-and-demo
 
 I would love to hear your feedback on this application. If you run into
 problems, please file an issue on GitHub_, or contribute to the project by
