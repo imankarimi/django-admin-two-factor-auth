@@ -17,7 +17,7 @@ Contents:
 
 I would love to hear your feedback on this application. If you run into
 problems, please file an issue on GitHub_, or contribute to the project by
-forking the repository and sending some pull requests or email_.
+forking the repository and sending some pull requests.
 
 Indices and tables
 ==================
@@ -28,4 +28,3 @@ Indices and tables
 
 .. _Google-Authenticator: https://support.google.com/accounts/answer/1066447?hl=en
 .. _GitHub: https://github.com/imankarimi/django-admin-two-factor-auth/issues
-.. _email: Iman Karimi <imankarimi.mail@gmail.com>
