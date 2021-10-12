@@ -22,18 +22,18 @@
 * Download and install last version of **Django Admin Two-Factor Authentication**:
 
 ```bash
-$ pip install git+https://github.com/imankarimi/django-admin-two-factor-auth.git
-$ # or
-$ easy_install git+https://github.com/imankarimi/django-admin-two-factor-auth.git
+$ pip install django-admin-two-factor
+# or
+$ easy_install django-admin-two-factor
 ```
 
 * Add 'admin_two_factor' application to the INSTALLED_APPS setting of your Django project `settings.py` file (note it should be before 'django.contrib.admin'):
 
 ```python
 INSTALLED_APPS = (
-    'admin_two_factor.apps.TwoStepVerificationConfig',
-    'django.contrib.admin',
-    # ...
+'admin_two_factor.apps.TwoStepVerificationConfig',
+'django.contrib.admin',
+# ...
 )
 ```
 
@@ -55,9 +55,9 @@ ADMIN_TWO_FACTOR_NAME = 'PROJECT_NAME'
 
 ```python
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('two_factor/', include(('admin_two_factor.urls', 'admin_two_factor'), namespace='two_factor')),
-    # ...
+path('admin/', admin.site.urls),
+path('two_factor/', include(('admin_two_factor.urls', 'admin_two_factor'), namespace='two_factor')),
+# ...
 ]
 ```
 
@@ -94,20 +94,24 @@ $ python manage.py runserver # default port 8000
 <br />
 
 * **User List:** the users who have enabled two-factor auth
+
 ![Django Admin Two-Factor Auth: User List](https://raw.githubusercontent.com/imankarimi/django-admin-two-factor-auth/main/screenshoots/django_admin_two_factor_auth_4.png)
 
 <br />
   
 * **Add New User:**
+
 ![Django Admin Two-Factor Auth: Add New User](https://raw.githubusercontent.com/imankarimi/django-admin-two-factor-auth/main/screenshoots/django_admin_two_factor_auth_2.png)
 
 <br />
 
 * **Scan QRCode and enter the valid code:**
+
 ![Django Admin Two-Factor Auth: Scan QRCode](https://raw.githubusercontent.com/imankarimi/django-admin-two-factor-auth/main/screenshoots/django_admin_two_factor_auth_3.png)
 
 <br />
 
 * **Logout and login again with [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en):**
+
 ![Django Admin Two-Factor Auth: Login with Code](https://raw.githubusercontent.com/imankarimi/django-admin-two-factor-auth/main/screenshoots/django_admin_two_factor_auth_5.png)
 
