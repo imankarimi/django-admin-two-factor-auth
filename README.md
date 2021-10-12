@@ -1,10 +1,10 @@
-# Django Admin Two Factor Authentication
+# Django Admin Two-Factor Authentication
 
 **Django Admin Two-Factor Authentication**, allows you to login django admin with google authenticator.
 
 <br>
 
-## Why Django Log Reader?
+## Why Django Admin Two-Factor Authentication?
 
 - Using google authenticator to login your Django admin.
 - Used jquery confirm dialog to get code.
