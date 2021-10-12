@@ -1,0 +1,8 @@
+{% extends 'admin/base.html' %}
+
+{% block extrahead %}
+    {{ block.super }}
+    {% if can_redirect %}
+        <script>location.reload();</script>
+    {% endif %}
+{% endblock %}

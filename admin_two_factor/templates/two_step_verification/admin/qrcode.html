@@ -1,0 +1,10 @@
+{% load i18n %}
+
+<img src="data:image/png;base64,{{ qrcode }}" width="200" alt="two step verification">
+
+<div class="help" style="margin:0;">
+    {% trans 'Scan the following barcode with your phone’s OTP app (e.g. Google Authenticator).' %}
+    <a href="https://support.google.com/accounts/answer/1066447?hl=en" target="_blank">
+        {% trans 'Install Google Authenticator?' %}
+    </a>
+</div>
