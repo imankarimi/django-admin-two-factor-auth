@@ -13,9 +13,9 @@
 
 <br />
 
-[comment]: <> (![Django Log Reader]&#40;https://raw.githubusercontent.com/imankarimi/django-log-reader/main/screenshots/django_log_reader.png&#41;)
+![Django Admin Two-Factor Auth](https://raw.githubusercontent.com/imankarimi/django-admin-two-factor-auth/main/screenshoots/django_admin_two_factor_auth_5.png)
 
-[comment]: <> (<br />)
+<br />
 
 ## How to use it
 
@@ -86,3 +86,27 @@ $ python manage.py runserver # default port 8000
 ```
 
 * Access the `admin` section in the browser: `http://127.0.0.1:8000/`
+
+
+## ScreenShoots
+
+<br />
+
+* **User List:** the users who have enabled two-factor auth
+![Django Admin Two-Factor Auth: User List](https://raw.githubusercontent.com/imankarimi/django-admin-two-factor-auth/main/screenshoots/django_admin_two_factor_auth_4.png)
+
+<br />
+  
+* **Add New User:**
+![Django Admin Two-Factor Auth: Add New User](https://raw.githubusercontent.com/imankarimi/django-admin-two-factor-auth/main/screenshoots/django_admin_two_factor_auth_2.png)
+
+<br />
+
+* **Scan QRCode and enter the valid code:**
+![Django Admin Two-Factor Auth: Scan QRCode](https://raw.githubusercontent.com/imankarimi/django-admin-two-factor-auth/main/screenshoots/django_admin_two_factor_auth_3.png)
+
+<br />
+
+* **Logout and login again with [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en):**
+![Django Admin Two-Factor Auth: Login with Code](https://raw.githubusercontent.com/imankarimi/django-admin-two-factor-auth/main/screenshoots/django_admin_two_factor_auth_5.png)
+
