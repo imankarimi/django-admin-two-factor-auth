@@ -1,11 +1,22 @@
 Django Admin Two-Factor Auth Documentation
-==============================================
+##########################################
 
-Google Two-Factor Authentication for Django admin. Built for providing the easiest integration
-into most Django projects. Inspired by the user experience of Google's Two-Step Authentication,
+Google Two-Factor Authentication for Django admin. Inspired by the user experience of Google's Two-Step Authentication,
 allowing users to authenticate by using a token generator app like Google-Authenticator_.
 
+Why Django Admin Two-Factor Authentication?
+===========================================
+
+* Using google authenticator to login your Django admin.
+* Used jquery confirm dialog to get code.
+* Simple interface
+* Easy integration
+
+.. image:: https://raw.githubusercontent.com/imankarimi/django-admin-two-factor-auth/main/screenshoots/django_admin_two_factor_auth_5.png
+  :alt: Two-Factor Login Page
+
 Contents:
+=========
 
 .. toctree::
    :maxdepth: 2
