@@ -54,11 +54,17 @@ ADMIN_TWO_FACTOR_NAME = 'PROJECT_NAME'
 * Include the **Admin Two Factor** URL config in `PROJECT_CORE/urls.py`:
 
 ```python
+# Django version >= 2
 urlpatterns = [
 path('admin/', admin.site.urls),
 path('two_factor/', include(('admin_two_factor.urls', 'admin_two_factor'), namespace='two_factor')),
 # ...
 ]
+
+# Django version = 1
+# urlpatterns = [
+# url(r'^admin/', include(admin.site.urls)),
+# url(r'^two_factor/', include(('admin_two_factor.urls', 'admin_two_factor'), namespace='two_factor')),
 ```
 
 * Collect static if you are in production environment:
