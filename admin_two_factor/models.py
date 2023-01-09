@@ -5,7 +5,7 @@ from io import BytesIO
 import pyotp
 import qrcode
 from admin_two_factor import settings
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from django.core.cache import cache
 from django.core.exceptions import ValidationError
 from django.db import models
@@ -13,7 +13,7 @@ from django.utils.translation import gettext as _
 
 
 class TwoFactorVerification(models.Model):
-    user = models.OneToOneField(User, on_delete=models.DO_NOTHING, related_name='two_step')
+    user = models.OneToOneField(get_user_model(), on_delete=models.DO_NOTHING, related_name='two_step')
     secret = models.CharField(_('secret key'), max_length=20, null=True, blank=True, unique=True, editable=False)
     code = models.CharField(_('code'), max_length=8, null=True, blank=True,
                             help_text=_('You must enter the code here to active/deactivate two step verification.'))
